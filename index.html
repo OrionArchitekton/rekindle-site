@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.danmercede.com/works/rekindle/" />
+  <title>Rekindle: your abandoned side project misses you</title>
+  <meta name="description"
+    content="Rekindle reads a dormant GitHub repo, diagnoses why the flame died from its commit cadence, gives you three steps starting with one you can do tonight, and speaks a cornerman hype speech about your project by name." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Rekindle" />
+  <meta property="og:title" content="Rekindle: your abandoned side project misses you" />
+  <meta property="og:description"
+    content="Learned behavioral contracts, three-way drift verdicts, and human-approved evolution for AI agents that never give the same answer twice. UiPath AgentHack 2026 finalist." />
+  <meta property="og:url" content="https://www.danmercede.com/works/rekindle/" />
+  <meta property="og:image" content="https://www.danmercede.com/works/rekindle/og-card.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Rekindle: your abandoned side project misses you. UiPath AgentHack 2026 finalist." />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@danmercede" />
+  <meta name="twitter:creator" content="@danmercede" />
+  <meta name="twitter:title" content="Rekindle: your abandoned side project misses you" />
+  <meta name="twitter:description"
+    content="Learned behavioral contracts, three-way drift verdicts, and human-approved evolution for AI agents. UiPath AgentHack 2026 finalist." />
+  <meta name="twitter:image" content="https://www.danmercede.com/works/rekindle/og-card.png" />
+  <meta name="twitter:image:alt" content="Rekindle: your abandoned side project misses you. UiPath AgentHack 2026 finalist." />
+
+  <!-- Brand favicons (Dan Mercede logo pack, DM mark) -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Structured data: SoftwareSourceCode + SoftwareApplication for the tool,
+       backlinking author/publisher to the hub Person (danmercede.com/#person).
+       Static so crawlers see it without executing JS. -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://www.danmercede.com/works/rekindle/#software",
+          "name": "Rekindle",
+          "description": "Reads a dormant GitHub repository (README, recent commits, top-level tree) and returns an honest diagnosis, a three-step plan whose first step fits in fifteen minutes, and a spoken cornerman speech. Model output is parsed defensively and clamped server-side.",
+          "url": "https://www.danmercede.com/works/rekindle/",
+          "codeRepository": "https://github.com/OrionArchitekton/rekindle",
+          "programmingLanguage": "TypeScript",
+          "runtimePlatform": "Node.js 20+",
+          "author": { "@id": "https://www.danmercede.com/#person" },
+          "maintainer": { "@id": "https://www.danmercede.com/#person" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://www.danmercede.com/works/rekindle/#application",
+          "name": "Rekindle",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Linux, macOS, Windows (Node.js 20+)",
+          "description": "A web app that diagnoses why a side project went dormant and voices a short motivational speech about it by name, using Gemini for the analysis and ElevenLabs for the voice.",
+          "url": "https://www.danmercede.com/works/rekindle/",
+          "isAccessibleForFree": true,
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "author": { "@id": "https://www.danmercede.com/#person" },
+          "publisher": { "@id": "https://www.danmercede.com/#person" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.danmercede.com/#person",
+          "name": "Dan Mercede",
+          "url": "https://www.danmercede.com"
+        }
+      ]
+    }
+  </script>
+
+  <!-- Fonts: Inter for UI, JetBrains Mono for code/terminal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind is bundled at build time (compiled stylesheet emitted by Vite);
+       no render-blocking CDN JIT compiler. Base/print styles live in index.css. -->
+</head>
+
+<body class="bg-white text-neutral-900 antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
